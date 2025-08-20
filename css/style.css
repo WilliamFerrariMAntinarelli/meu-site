@@ -1,0 +1,254 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #007bff; /* Cor para hover */
+}
+
+/* Main Content */
+main {
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section {
+    background: #fff;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 900px; /* Limita a largura do conteúdo para melhor leitura */
+    text-align: left; /* Alinha o texto das seções à esquerda */
+}
+
+.section p, .section ul {
+    margin-bottom: 10px;
+}
+
+.section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Página Inicial - Hero Section */
+.hero {
+    padding: 50px 20px;
+    background: #e9ecef; /* Um cinza claro para o background */
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    background: #ccc; /* Placeholder */
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    overflow: hidden; /* Garante que a imagem se ajuste ao círculo */
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorcer */
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #212529;
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.poetic-phrase {
+    font-style: italic;
+    margin: 40px auto;
+    max-width: 700px;
+    font-size: 1.1em;
+    color: #555;
+    background: #f8f9fa;
+    padding: 20px;
+    border-left: 5px solid #007bff;
+    text-align: center;
+}
+
+.poetic-phrase p {
+    margin: 5px 0;
+}
+
+.cta-buttons .button {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background 0.3s ease;
+}
+
+.cta-buttons .button:hover {
+    background: #0056b3;
+}
+
+/* Botões menores */
+.button-small {
+    display: inline-block;
+    background: #6c757d;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 0.9em;
+    transition: background 0.3s ease;
+}
+
+.button-small:hover {
+    background: #5a6268;
+}
+
+/* Grid de Projetos e Certificados */
+.project-grid, .certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas */
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project-card, .certificate-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover, .certificate-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image, .certificate-image {
+    width: 100%;
+    height: 200px; /* Altura fixa para imagens de placeholder */
+    background: #eee; /* Placeholder */
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    color: #888;
+    overflow: hidden; /* Para garantir que a imagem não vaze */
+}
+
+.project-image img, .certificate-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+}
+
+.project-card h3, .certificate-card h3 {
+    margin-top: 0;
+    font-size: 1.4em;
+    color: #007bff;
+}
+
+.project-card p, .certificate-card p {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.project-techs {
+    font-weight: bold;
+    color: #444;
+    font-size: 0.9em;
+    margin-top: 15px;
+}
+
+.project-links {
+    margin-top: 20px;
+}
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .cta-buttons .button {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    .project-grid, .certificates-grid {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
+}
